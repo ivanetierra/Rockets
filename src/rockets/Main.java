@@ -31,8 +31,10 @@ public class Main {
 
         System.out.println(rocket1.getInfo()+"\n");
         rocket1.speedUp();
+        
 
-        //System.out.println(rocket2.getInfo());
+        //System.out.println(rocket2.getInfo()+"\n");
+        //rocket2.speedUp();
 
 
     }

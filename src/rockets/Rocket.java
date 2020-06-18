@@ -28,14 +28,18 @@ public class Rocket{
 
         System.out.println("Start speeding up rocket "+ id+"!"+"\n");
 
-        /*for (Propeller i : propellers) {
+        /*
 
-            i.run();
-        }*/
-
-        (propellers.get(0)).start();
+            (propellers.get(0)).start();
         (propellers.get(1)).start();
         (propellers.get(2)).start();
+        }*/
+
+        for (Propeller i : propellers) {
+
+            i.start();
+
+        }
     }
 }
 

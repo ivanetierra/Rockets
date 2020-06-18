@@ -19,7 +19,7 @@ public class Propeller extends Thread{
     }
 
     public String GetCurrentPower() {
-        return "[Current: " + currentPower + " Max: " + maxPower + "]";
+        return "[Current: " + currentPower + "; Max: " + maxPower + "]";
     }
 
     public void run() {
@@ -27,10 +27,10 @@ public class Propeller extends Thread{
         while (currentPower < maxPower) {
 
             currentPower += 10;
-            System.out.println(GetCurrentPower() + " " + getName());
+            System.out.println(getName()+":"+GetCurrentPower());
 
             if (currentPower == maxPower) {
-                System.out.println("Propeller '"+getName()+"' has its Max Power reached.");
+                System.out.println("Propeller "+getName()+" has its Max Power reached.");
             }
             try {
                 Thread.sleep((1000));
